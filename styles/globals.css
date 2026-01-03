@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+a {
+  @apply text-blue-600 underline-offset-2;
+}
+
+input, textarea, select, button {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2;
+}
+
+.dark body {
+  @apply bg-midnight-bg text-midnight-text;
+}
+
+.card {
+  @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+}
+
+.theme-midnight {
+  @apply bg-midnight-bg text-midnight-text;
+}
+
+.theme-paper {
+  @apply bg-paper-bg text-paper-text;
+}
+
+.theme-neon {
+  @apply bg-neon-bg text-neon-text;
+}
